@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style >
+        
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+      
+    div.padding2{
+              padding-left : 20px;
+              padding-block-start: 0px;
+    }
+       
+    /*style for header*/
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+/*style for Home button*/
+
+div.active{
+        background-color: rgb(107, 5, 5);
+        padding: 10px;
+        font:bold;
+        color: #FFF;
+        font-family: 'Dancing Script', cursive;
+        
+}
+   /*styles for dropdown buttons*/   
+    
+      #con ul{
+        list-style: none;
+        margin: 0px;
+      }
+      #con ul li{
+        padding: 10px;
+        position: relative;
+        width: 176px;
+        background-color:rgb(226, 198, 231);
+        border-top: 3px solid #BDC3C7;
+        font-family: 'Dancing Script', cursive;
+      }
+      #con ul ul{
+        transition: all 0.3s;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        left: 90%;
+        top:-2%;
+
+      }
+      #con ul li:hover > ul{
+        opacity: 1;
+        visibility: visible;
+      }
+      #con ul li a{
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /*style for search button*/
+      
+
+      input{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        box-sizing: border-box;
+        transition: .5s;
+        font-family: 'Dancing Script', cursive;
+        
+      }
+      input[type="text1"]{
+        background:rgb(243, 238, 243);
+        width: 340px;
+        height: 50px;
+        outline:brown;
+        padding: 0 25px;
+        border-radius: 50px;
+      }
+       .search {
+          width: 100%;
+          position: relative
+        }
+
+        .searchTerm {
+              float: left;
+              width: 100%;
+              border: 3px solid rgb(102, 17, 84);
+              padding: 5px;
+              height: 20px;
+              border-radius: 5px;
+              outline:brown;
+              color: rgb(80, 100, 91);
+          }
+
+          .searchTerm:focus{
+              color:darkslategrey;
+          }
+/*Resize the wrap to see the search bar change!*/
+          .wrap{
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          label{
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            color: rgb(102, 17, 84);
+          }
+
+
+    </style>  
+     
+    <meta charset="utf-8">
+    
+    <title>Untitle</title>
+    </head>
+  
+    <header>
+        <div class="overlay">
+           <h1> A Complete Note Set For RACGP Fellowship Exam</h1>
+       </div>
+    </header>
+      
+   
+    <div id="con">
+          <div class="padding2">
+         <ul>
+            <li>
+            <div class="active" >Home</div>
+           </li>
+          
+          <li>Aboroginal health
+            <ul>
+             <li>Cancers</li>
+             <li>Dermatology</li>
+             <li>ENT</li>
+             <li>Genatics</li>
+             <li>EYE</li>
+           </ul>
+          </li>
+          <li>Breast disease</li>
+          <li>Cancers</li>
+          <li>Cardiovascular</li>
+          <li>Dermatology</li>
+          <li>Emergency medicine</li>
+          <li>Endocrinology</li>
+          <li>ENT</li>
+          <li>EYE</li>
+          <li>Genatics</li>
+          <li>Gastroenterology</li>
+          <li>Hepatology and Pancreaus</li>
+          <li>Functional disorders</li>
+          <li>Haematology</li>
+
+        </ul>
+   
+      </div>
+    </div>
+     
+      
+    <div class="wrap">
+        <div class="search">
+            <label for="username"> Search notes for...</label>
+            <input type="text1" class="searchTerm" placeholder="Search">
+           
+              <i class="fa fa-search" aria-hidden="true"></i>
+
+          
+        </div>
+     </div>
+     
+  
+    </html>
