@@ -1,6 +1,83 @@
-<div class="container">
-        <div class="row">
-            <div class="col-sm-3">
+<!DOCTYPE html>
+<html>
+
+    <style >
+        
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+      
+         
+    div.padding1{
+              padding-left : 1050px;
+              padding-block-start: 40px;
+              padding-right: 40px;
+      }
+
+    div.padding3{
+            padding-bottom: 145px;
+            padding-top: 10px;
+    }
+   
+    /*style for header*/
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
+	margin-bottom: 0px;
+    padding-left: 100px;
+}
+h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
+	margin-bottom: 0px;
+    padding-bottom: 30px;
+   
+}
+
+label{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: rgb(102, 17, 84);
+    padding-bottom: 15px;
+    }
+          
+          
+    </style>  
+     <head>
+    <meta charset="utf-8">
+   
+    <title>Clinic Room Register</title>
+    </head>
+  
+    <header>
+        <div class="overlay">
+           <h1> A Complete Note Set For RACGP Fellowship Exam</h1>
+       </div>
+    </header>
+      
+
+<div class = "padding1">
 <h2>Register</h2>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
@@ -21,7 +98,7 @@
         <label for="username">Email</label>
         <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
         <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-            <div *ngIf="f.username.errors.required">Username is required</div>
+            <div *ngIf="f.username.errors.required">Email is required</div>
         </div>
     </div>
     <div class="form-group">
@@ -32,12 +109,14 @@
             <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
         </div>
     </div>
+    <div class = "padding3">
     <div class="form-group">
         <button [disabled]="loading" class="btn btn-primary">Register</button>
         <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-        <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
+        <a href="/main">
+            <button type="button"  class="btn btn-link">Cancel</button>
+          </a>  
+    </div>
     </div>
 </form>
-</div>
-</div>
 </div>
