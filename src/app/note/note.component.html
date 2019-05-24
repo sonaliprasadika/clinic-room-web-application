@@ -16,22 +16,14 @@
         div.padding1{
                   padding-left : 1200px;
                   padding-block-start: 0px;
-                  
           }
         div.padding2{
-                  padding-bottom: 700px;
-                  padding-left: 460px;
-                  padding-top: 100px;
-                 
-                
+                  padding-left : 20px;
+                  padding-block-start: 0px;
+                  padding-bottom: 200px;
+                  color: black;
         }
-
-        div.padding3{
-                  padding-left : 900px;
-                  padding-block-start: 50px;
-                
-        }
-       
+           
         /*style for header*/
     header {
       background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
@@ -58,12 +50,12 @@
       font-size: 35px;
       margin-bottom: 0px;
     }
-    div.nnn {
-      font-family: 'Dancing Script', cursive;
-     
-      color: rgb(102, 17, 84);
-
-    }
+    
+    h2{
+            padding-left: 540px;
+            padding-block-start: 0px;
+            font-family: 'Dancing Script', cursive;
+        }
     /*style for Home button*/
     
     div.active{
@@ -168,39 +160,18 @@
               .btn-space {
                   margin-right: 5px;
               }
+              div.nnn {
+      font-family: 'Dancing Script', cursive;
+      
+      color: rgb(102, 17, 84);
 
-              .container{
-                padding: 30px;
-              }
-              .column {
-                padding: 10px;
-  
-                }
-                .left {
-                  width: 60%;
-                }
-
-              .right {
-                    width: 40%;
-              }
-
-                .row:after {
-                  content: "";
-                  display: table;
-                  clear: both;
-                }
-                h2{
-            padding-left: 480px;
-            padding-block-start: 0px;
-            font-family: 'Dancing Script', cursive;
-        }
+    }
+              
         </style>  
           <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+       
         <title>Untitle</title>
-        
         </head>
         <div >
         <header>
@@ -209,28 +180,67 @@
            </div>
         </header>
        
+       
         <div class="padding1" >
            
-           <a href=" ">
-            <button type="button"  class="btn btn-link"><b>Home</b></button>
+           <a href="/login">
+            <button type="button"  class="btn btn-link" ><b>Logout</b></button>
           </a>
           
-         </div>
-         <div class="nnn">
-         <h2><u>Select your File & Upload</u></h2>
+         
+        </div>
+        <div class="nnn">
+          <h2><u>Admin Protal</u></h2>
+        </div>
         
-         <div class="padding2" >
-        <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
-
-        <button type="button" class="btn btn-success btn-s" 
-          (click)="uploader.uploadAll()" 
-          [disabled]="!uploader.getNotUploadedItems().length" >
-              Upload File
-        </button>
-       </div>
-      </div>
-      </div>
+        <div id="con">
+              <div class="padding2">
+             <ul>
+                <li>
+                <div class="active" >
+                  <a href=" " style="color:white">Home </a>
+                </div>
+               </li>
+              
+              <li><a href=" " style="color:black">Aboroginal health </a></li>
+              <li><a href=" " style="color:black">Breast disease</a></li>
+              <li><a href=" " style="color:black">Cancers </a>
+              <ul>
+                  <li><a href=" " style="color:black">Medicine </a></li>
+                  <li><a href="/admin" style="color:black">Symptoms </a></li>
+                  <li><a href=" " style="color:black">Pathogen </a></li>
+              </ul></li>
+              <li><a href=" " style="color:black">Cardiovascular </a></li>
+              <li><a href=" " style="color:black">Dermatology </a></li>
+              <li><a href=" " style="color:black">Emergency medicine </a></li>
+              <li><a href=" " style="color:black">Endocrinology </a></li>
+              <li><a href=" " style="color:black">ENT </a></li>
+              <li><a href=" " style="color:black">EYE </a></li>
+              <li><a href=" " style="color:black"> Genatics</a></li>
+              <li><a href=" " style="color:black"> Gastroenterology</a></li>
+              <li><a href=" " style="color:black">Hepatology and Pancreaus </a></li>
+              <li><a href=" " style="color:black">Functional disorders</a></li>
+              <li><a href=" " style="color:black"> Haematology</a></li>
+              
+            </ul>
+           
+        </div>
+        
+          
+       
+        </div>
+        <div class="wrap">
+            <div class="search">
+                <label for="username"> Search notes for...</label>
+                <input id ="search" type="text1" class="searchTerm" placeholder="Search">
+                  <p id='login'></p>
+                  <i class="fa fa-search" aria-hidden="true"></i>
+    
+              
+            </div>
+         </div>
+        </div>
+        
         </html>
-
 
 
